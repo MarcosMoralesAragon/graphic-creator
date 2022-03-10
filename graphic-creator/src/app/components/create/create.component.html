@@ -1,0 +1,15 @@
+<p-card class="card-login">
+    <div class="flex">
+      <img src="../assets/logo_size.jpg">
+      <p>Introduzca los datos y leyenda separados por comas</p>
+      <div id="user-form">
+        <input type="text" pInputText [(ngModel)]="data" placeholder="Datos"> 
+      </div>
+      <div id="user-form">
+        <input type="text" pInputText [(ngModel)]="names" placeholder="Leyenda"> 
+      </div>
+      <div class="button-inicio">
+        <p-button label="Crear" (click)="create()"></p-button>
+      </div>
+    </div>
+  </p-card>
